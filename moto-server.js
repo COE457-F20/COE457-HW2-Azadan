@@ -16,7 +16,6 @@ var server = net.createServer(function (socket) {
             post_body = r.substring(post_body_start, r.length);
             console.log(post_body);
             all_coords = JSON.parse(post_body);
-            console.log(all_coords.coords_starting.latitude);
         }
         else if (r.substring(0, 3) == "GET") {
             if (all_coords != null) {
